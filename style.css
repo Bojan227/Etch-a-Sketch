@@ -1,0 +1,26 @@
+.container{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  gap: 2px;
+  text-align: center;
+  
+  
+}
+
+
+
+.grid-item{
+ 
+  border: 2px solid green;
+  padding: 20px;
+  /* flex: 1 0 2%; */
+}
+.myColor{
+  background-color: blue;
+}
