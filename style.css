@@ -21,6 +21,7 @@
   padding: 20px;
   /* flex: 1 0 2%; */
 }
-.myColor{
+.myColor:hover{
   background-color: blue;
+  transition: ease 0.1s all;
 }

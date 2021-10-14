@@ -1,19 +1,15 @@
 const container = document.querySelector('.container');
 
-
 for(let i =0; i < 256; i++){
     let cells = document.createElement('div');
     cells.classList.add('grid-item');
     cells.textContent = (i + 1);
 
     cells.addEventListener('mouseover', function(e){
-        e.target.classList.add('myColor')
-        
+            e.target.classList.add('myColor')  
     })
-    cells.classList.remove('myColor')
-    container.appendChild(cells);   
+    container.appendChild(cells)
 }
-
 
 
 
