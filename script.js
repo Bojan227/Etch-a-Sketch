@@ -1,14 +1,24 @@
 const container = document.querySelector('.container');
+const button = document.querySelector('.clearButton');
 
-for(let i =0; i < 256; i++){
-    let cells = document.createElement('div');
-    cells.classList.add('grid-item');
-    cells.textContent = (i + 1);
+button.addEventListener('click', makeGrid);
 
-    cells.addEventListener('mouseover', function(e){
-            e.target.classList.add('myColor')  
-    })
-    container.appendChild(cells)
+function makeGrid(){
+    
+
+    for(let i =0; i < 256; i++){
+        let cells = document.createElement('div');
+        cells.classList.add('items');
+        cells.textContent = (i + 1);
+    
+        cells.addEventListener('mouseover', function(e){
+                e.target.classList.add('myColor')  
+        })
+        container.appendChild(cells)
+
+    
+}
+
 }
 
 
