@@ -1,29 +1,31 @@
 const container = document.querySelector('.container');
-const button = document.querySelector('.clearButton');
+const clearButton = document.querySelector('.clearButton');
+const newGrid = document.querySelector('.makeGrid');
 
-button.addEventListener('click', makeGrid);
+
+
+newGrid.addEventListener('click', makeGrid);
 
 function makeGrid(){
-    
-
+      
+       
     for(let i =0; i < 256; i++){
-        let cells = document.createElement('div');
-        cells.classList.add('items');
-        cells.textContent = (i + 1);
+        let divs = document.createElement('div');
+        divs.classList.add('items');
+        divs.textContent = (i + 1);
     
-        cells.addEventListener('mouseover', function(e){
+        divs.addEventListener('mouseover', function(e){
                 e.target.classList.add('myColor')  
         })
-        container.appendChild(cells)
-
-    
+        container.appendChild(divs) 
+}
+        
 }
 
-}
 
-
-
-
+clearButton.addEventListener('click', function(){
+        container.innerHTML = ''
+});
 
 
 
