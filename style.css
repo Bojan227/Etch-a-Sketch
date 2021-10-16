@@ -5,8 +5,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 100vw;
-  gap: 18px;
+   gap: 18px;
+ 
   
 }
 
@@ -15,9 +15,10 @@ body{
   display: grid;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(16, 1fr);
-  gap: 2px;
-  text-align: center;
-  position: relative;
+  
+text-align: center;
+ width: 960px;
+ height: 500px;
 }
 .clearButton{
   padding: 20px;
@@ -26,7 +27,7 @@ body{
 
 .items{
   cursor: pointer;
-  padding: 20px;
+  
 }
 .myColor:hover{
   background-color: blue;
