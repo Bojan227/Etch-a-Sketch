@@ -6,30 +6,33 @@ body{
   justify-content: center;
   align-items: center;
    gap: 18px;
- 
+ text-align: center;
+ background-color: aquamarine;
   
 }
 
 .container{
   border: 2px solid black;
   display: grid;
-  
-text-align: center;
- width: 960px;
+  text-align: center;
+  width: 600px;
  height: 500px;
+background-color: white;
 }
 .makeGrid, .clearButton{
   padding: 20px;
   border-radius: 20px;
+  cursor: pointer;
+  border:2px solid red;
+
 }
-
-
 
 .items{
   cursor: pointer;
+  border: 1px solid black;
   
 }
-.myColor:hover{
-  background-color: blue;
-  transition: ease 0.1s all;
+.myColor{
+  
+  
 }

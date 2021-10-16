@@ -19,7 +19,7 @@ function makeGrid(){
                     let divs = document.createElement('div');
                     divs.classList.add('items');
                     divs.addEventListener('mouseover', function(e){
-                            e.target.classList.add('myColor')  
+                            divs.style.backgroundColor = 'red';
                     })
                     container.appendChild(divs) 
             }
@@ -28,6 +28,5 @@ function makeGrid(){
 clearButton.addEventListener('click', function(){
         container.innerHTML = ''
 });
-
 
 
