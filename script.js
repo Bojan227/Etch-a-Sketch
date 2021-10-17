@@ -27,6 +27,7 @@ function makeGrid(){
                 for(let i =0; i < num*num; i++){
                     let divs = document.createElement('div');
                     divs.classList.add('items');
+                    
 
                     redButton.addEventListener('click', function(){
                             divs.addEventListener('mouseover', function(){
